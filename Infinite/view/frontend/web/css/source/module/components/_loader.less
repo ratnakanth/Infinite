@@ -1,0 +1,27 @@
+
+@import '../_utils';
+
+
+@atqscroll-loader__size: 20px;
+
+--------------------------------------------
+
+& when (@media-common = true) {
+    .atqscroll-loading-block {
+        margin: 0 auto;
+        padding: @atqscroll__indent 0;
+        width: @atqscroll-loader__size;
+        height: @atqscroll-loader__size;
+    }
+
+    .atqscroll-loading-icon {
+        & {
+            min-width: @atqscroll-loader__size;
+            height: @atqscroll-loader__size;
+        }
+
+        &.-atqscroll-animate {
+            animation: atqscrollRotate 1.5s linear infinite;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+
+& when (@media-common = true) {
+    .atqscroll-page-num {
+        & {
+            clear: both;
+            padding: 6px 10px;
+            color: @atqscroll__text__color;
+            letter-spacing: .03em;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+
+        &.-atqscroll-button {
+            display: inline-block;
+            padding: 5px 14px;
+            border: 1px solid @atqscroll__border__color;
+            border-radius: 2px;
+            background: @atqscroll__background-color;
+        }
+
+        &.-atqscroll-divider {
+            border-bottom: 1px solid @atqscroll__border__color;
+        }
+
+        &.-atqscroll-background {
+            background: @atqscroll__background-color;
+        }
+    }
+}
